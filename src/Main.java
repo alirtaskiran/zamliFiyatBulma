@@ -5,16 +5,16 @@ public class Main {
 
         int zam, ilkFiyat, sonFiyat;
 
-        System.out.println("Lutfen urune '%' kac zam geldigini yaziniz...");
+        System.out.println("Lutfen urune '%' kac zam geldigini yaziniz..."); //Gelen zam miktarı girilir.
         Scanner zamOrani = new Scanner(System.in);
         zam = zamOrani.nextInt();
 
-        System.out.println("Lutfen urunun guncel fiyatini giriniz...");
+        System.out.println("Lutfen urunun guncel fiyatini giriniz..."); //Ürünün zamsız fiyatı girilir.
         Scanner güncelFiyat = new Scanner(System.in);
         ilkFiyat = güncelFiyat.nextInt();
 
         sonFiyat = (ilkFiyat * zam)/100 + ilkFiyat;
-        System.out.println("Urunun zamli fiyati : " + sonFiyat);
+        System.out.println("Urunun zamli fiyati : " + sonFiyat); //Ürünün güncel zamlı fiyatı hesaplanır...
 
     }
 }
